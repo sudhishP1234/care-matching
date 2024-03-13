@@ -1,15 +1,14 @@
-import Header from './header/Header';
-import Banner from './banner/Banner';
-// import './App.css';
-
+import React from 'react';
+import MyRoutes from './MyRoutes';
+import {createRoot} from 'react-dom/client';
 function App() {
-  return (
-    <div className="App">
-      <Header/>
-      <Banner/>
-      
-    </div>
-  );
+  const container = document.getElementById('root');
+  const root = createRoot(container);
+    
+     root.render(
+       <React.StrictMode>
+        <MyRoutes />
+      </React.StrictMode>);
 }
 
 export default App;

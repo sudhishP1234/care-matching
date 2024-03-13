@@ -1,0 +1,16 @@
+/* .sam{
+  margin-left:280px;
+    font-weight: 600;
+    gap: 40px;
+}
+@media only screen and (max-width: 600px) {
+  .sam{
+    margin-left:240px;
+      font-weight: 600;
+      gap: 40px;
+  }
+} */
+/* style={{marginLeft:"280px",fontWeight:"700",gap:"40px"}} */
+.nav-item{
+  text-decoration: none;
+}

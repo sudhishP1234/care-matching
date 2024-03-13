@@ -1,36 +1,42 @@
 import React from 'react'
-// import '../App.css';
+import { Link } from 'react-router-dom';
+import '../header/head.css';
 
 function Header() {
   return (
     <>
+    <div className="container" >
+    <div className='col-sm-12' style={{boxShadow: "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px"}}>
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
-    <div className="container-fluid">
-      <a className="navbar-brand" href="/">Navbar scroll</a>
+      <a className="navbar-brand" id='navbar' href="/" style={{fontFamily:"monospace",display:"flex",fontWeight:"900",fontSize:"28px",marginLeft:"65px"}}>Your <h3 style={{fontSize:"30px",fontWeight:"900"}}>Logo</h3></a>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarScroll">
-        <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style={{marginLeft:"500px",fontWeight:"700",gap:"20px"}}>
+        <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style={{marginLeft:"280px",fontWeight:"700",gap:"40px",textDecoration:"none"}} >
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="/">ABOUT US</a>
+          <Link to={`/` } className="nav-link active" aria-current="page" href="/">ABOUT US</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/">HOW IT WORK</a>
+          <Link to={`/Howitwork` }className="nav-link" href="/">HOW IT WORK</Link>
           </li>
           <li className="nav-item dropdown">
-            <a className='nav-link' href='/'>
-              HELP
-            </a>
+          <Link to={`/` } className='nav-link' href='/'>
+              HELP </Link>
           </li>
         </ul>
-        <form >
-        <button type="button" className="btn btn-secondary" style={{margin:"20px",backgroundColor:"black"}}>LOG IN</button>
-        <button type="button" className="btn btn-secondary" style={{margin:"20px",backgroundColor:"black"}}>REGISTER</button>
+        <form style={{marginRight:"55px"}}>
+        {/* <Link>TEST</Link> */}
+        <Link to={`/login`} className="btn btn-secondary" style={{margin:"20px",backgroundColor:"black",width:"90px",padding:"5px"}}>LOG IN</Link>
+        <Link to={`/register`} className="btn btn-secondary" style={{margin:"20px",backgroundColor:"black",width:"100px",padding:"5px"}}>REGISTER</Link>
+
         </form>
       </div>
-    </div>
+    
   </nav>
+  </div>
+ 
+  </div>
   </>
    )
 }

@@ -48,9 +48,14 @@
   height: 600px;
   width: 100%;
 }
-.nav-link:hover{
-  background-color: black;
-}
-.nav-tabs{
+
+
+/* card in css code  */
+
+svg{
   border: 1px solid black;
+  background-color: black;
+  padding: 4px;
+  height: 55px;
+  width: 55px;
 }

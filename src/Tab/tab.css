@@ -1,0 +1,156 @@
+ul.nav li:first-child {
+  border-bottom-left-radius: 2rem;
+  border-top-left-radius: 2rem;
+}
+
+ul.nav li:last-child {
+  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Tab Container */
+.Tabs {
+  width: 70%;
+  height: auto;
+  min-height: 400px;
+  margin: 2.1rem auto 1.2rem;
+  padding: 1rem 1rem;
+  margin-left: 488px;
+  color: #e8f0f2;
+  border-radius: 2rem;
+  @media (max-width: 769px) {
+    padding: 2rem 0;
+  }
+}
+
+/* Tab Navigation */
+ul.nav {
+  width: 60%;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #020303;
+  border-radius: 2rem;
+  padding-left: 0px;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+}
+
+ul.nav li {
+  width: 50%;
+  padding: 10px;
+  list-style: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+
+ul.nav li:first-child {
+  border-bottom-left-radius: 2rem;
+  border-top-left-radius: 2rem;
+}
+
+ul.nav li:last-child {
+  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+#tb{
+  background-color:white;
+  color: black;
+}
+
+ul.nav li:hover {
+  background: white;
+  color: black;
+}
+
+ul.nav li.active {
+  background: #0a0a0a;
+  color: white;
+}
+
+/* Tab Content Styles */
+/* .TabContent {
+  font-size: 2rem;
+  text-align: center; */
+/* } */
+/* .container{
+    display: flex;
+    border-radius: 10px; 
+  }
+  
+#contact-tab {
+    background-color: #0d0d0e; 
+    color: #fff;  
+    border-radius: 10px; 
+    margin-right: 5px; 
+  } 
+#pills-tab{
+  margin: 10px;
+  margin-right: 20px
+} */
+
+/* .nav-tabs.nav-link.active sho{
+  color: white;
+}
+.nav-tabs.nav-link.active{
+  background-color: black;
+} */
+.customtab {
+  border-bottom: none;
+}
+.customtab .nav-link {
+  background-color: #fff;
+  border-radius: 0;
+  border-radius: 100px;
+  width: 100%;
+  color: #000;
+}
+.customtab .nav-link {
+  float: left;
+  width: 50%;
+}
+.customtab .nav-link.tabright {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.customtab .nav-link.tableft {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.customtab .nav-item.show .nav-link, .customtab .nav-link.active{
+background-color: black;
+color: #fff;
+border-color: black;
+}
+.nv{
+  margin-top: -350px;
+  width: 600px;
+}
+.tab-pane {
+  color: #fff;
+}
+#nav-home{
+  text-align: center;
+    padding: 20px;
+    line-height: 29px;
+    font-size: 20px;
+}
+#nav-profile{
+  text-align: center;
+    padding: 20px;
+    line-height: 29px;
+    font-size: 20px;
+}
+#ipt{
+  padding: 25px;
+  margin: -10px;
+}
