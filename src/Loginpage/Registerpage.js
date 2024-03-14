@@ -2,6 +2,8 @@
 import React, { useState }  from 'react'
 import { ToastContainer, toast } from 'react-toastify'; 
 import 'react-toastify/dist/ReactToastify.css';
+import Header from '../header/Header'
+import Navfooter from '../Footericon/Navfooter'
 
 function Registerpage() {
     const [data,setData] = useState({name:"", age:"", email:"", password:"" ,gender:"male"});
@@ -47,8 +49,11 @@ function Registerpage() {
     }
     
   return (
+   <>
+   <Header/>
     <div className='responsive-parent' style={{maxWidth:"500px",margin:"125px auto",padding:"20px",boxShadow: "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px"}}>
-    <ToastContainer/>
+    <ToastContainer/> 
+    
         <form style={{ width:"100%",padding:"12px",marginBottom:"10px"}}>
             <h3 className='text-center' style={{textAlign:"center",marginBottom:"15px"}} >Register-Form</h3>
             <div className='mb-3'>
@@ -78,7 +83,10 @@ function Registerpage() {
                 
             </div> 
         </form>
+       
         </div>
+        <Navfooter/>
+        </>
   )
 }
 

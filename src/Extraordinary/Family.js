@@ -18,7 +18,11 @@ function Family() {
           <div
             role="group"
             aria-lable="Basic checkbox toggle button group"
-            style={{ marginTop: "-15px", paddingLeft: "113px" }}
+            style={{
+              marginTop: "-15px",
+              paddingLeft: "113px",
+              letterSpacing: "1px",
+            }}
           >
             <h2 style={{ marginTop: "50px" }}>
               Excellent Caregivers for Extraordinary Families
@@ -26,30 +30,30 @@ function Family() {
 
             <p>
               {" "}
-              <i class="fa fa-check-circle"></i> Give yourself the power of
-              responsibility.Remind yourself the only thing stopping you is
-              yourself
+              <i class="fa fa-check-circle"> </i>
+              Give yourself the power of responsibility.Remind yourself the only
+              thing stopping you is yourself
             </p>
 
             <p>
               {" "}
-              <i class="fa fa-check-circle"></i>Give yourself the power of
-              responsibility.Remind yourself the only thing stopping you is
-              yourself
+              <i class="fa fa-check-circle"> </i>
+              Give yourself the power of responsibility.Remind yourself the only
+              thing stopping you is yourself
             </p>
 
             <p>
               {" "}
-              <i class="fa fa-check-circle"></i> Give yourself the power of
-              responsibility.Remind yourself the only thing stopping you is
-              yourself
+              <i class="fa fa-check-circle"> </i>
+              Give yourself the power of responsibility.Remind yourself the only
+              thing stopping you is yourself
             </p>
 
             <p>
               {" "}
-              <i class="fa fa-check-circle"></i> Give yourself the power of
-              responsibility.Remind yourself the only thing stopping you is
-              yourself
+              <i class="fa fa-check-circle"> </i>
+              Give yourself the power of responsibility.Remind yourself the only
+              thing stopping you is yourself
             </p>
           </div>
         </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Service() {
   return (
-    <div className='container-flow' style={{marginLeft:"72px"}}>
+    <div className='container-flow' style={{marginLeft:"72px",marginTop:"-180px"}}>
     <div style={{marginTop:"40px",margin:"55px",width:"488px"}}>
     <h2 style={{fontSize:"35px",fontWeight:"700"}}>Ease Step To Get Your Care Service</h2>
     </div>

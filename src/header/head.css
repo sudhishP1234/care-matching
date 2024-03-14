@@ -14,3 +14,28 @@
 .nav-item{
   text-decoration: none;
 }
+
+
+.navbar-brand {
+  font-family: monospace;
+  font-weight: 900;
+  font-size: 28px;
+  margin-left: 15px;
+}
+
+.navbar-nav {
+  gap: 40px;
+}
+
+.nav-link {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+
+
+@media (min-width: 468px) {
+  .navbar-nav {
+    margin-left: 280px;
+  }
+}

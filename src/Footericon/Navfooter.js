@@ -1,5 +1,6 @@
 import React from 'react'
 // import { Link } from 'react-router-dom'
+// import '../Footericon/Navfooter.css'
 function Navfooter() {
   return (
     <div className='container' style={{backgroundColor:"#CECECE",height:"330px", marginTop:"70px",boxShadow: "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px"}}>

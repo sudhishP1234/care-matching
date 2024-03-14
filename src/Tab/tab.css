@@ -1,4 +1,4 @@
-ul.nav li:first-child {
+/* ul.nav li:first-child {
   border-bottom-left-radius: 2rem;
   border-top-left-radius: 2rem;
 }
@@ -12,25 +12,25 @@ ul.nav li:last-child {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
+} */
 
 /* Tab Container */
-.Tabs {
+/* .Tabs {
   width: 70%;
   height: auto;
   min-height: 400px;
   margin: 2.1rem auto 1.2rem;
   padding: 1rem 1rem;
-  margin-left: 488px;
+  margin-left: 478px;
   color: #e8f0f2;
   border-radius: 2rem;
   @media (max-width: 769px) {
     padding: 2rem 0;
   }
-}
+} */
 
 /* Tab Navigation */
-ul.nav {
+/* ul.nav {
   width: 60%;
   margin: 0 auto 1rem;
   display: flex;
@@ -42,7 +42,7 @@ ul.nav {
   @media (max-width: 768px) {
     width: 90%;
   }
-}
+} */
 
 ul.nav li {
   width: 50%;
@@ -77,33 +77,6 @@ ul.nav li.active {
   color: white;
 }
 
-/* Tab Content Styles */
-/* .TabContent {
-  font-size: 2rem;
-  text-align: center; */
-/* } */
-/* .container{
-    display: flex;
-    border-radius: 10px; 
-  }
-  
-#contact-tab {
-    background-color: #0d0d0e; 
-    color: #fff;  
-    border-radius: 10px; 
-    margin-right: 5px; 
-  } 
-#pills-tab{
-  margin: 10px;
-  margin-right: 20px
-} */
-
-/* .nav-tabs.nav-link.active sho{
-  color: white;
-}
-.nav-tabs.nav-link.active{
-  background-color: black;
-} */
 .customtab {
   border-bottom: none;
 }
@@ -116,7 +89,7 @@ ul.nav li.active {
 }
 .customtab .nav-link {
   float: left;
-  width: 50%;
+  width: 62%;
 }
 .customtab .nav-link.tabright {
   border-top-left-radius: 0;
@@ -132,7 +105,7 @@ color: #fff;
 border-color: black;
 }
 .nv{
-  margin-top: -350px;
+  margin-top: -355px;
   width: 600px;
 }
 .tab-pane {
@@ -140,17 +113,62 @@ border-color: black;
 }
 #nav-home{
   text-align: center;
-    padding: 20px;
+    padding: 30px;
     line-height: 29px;
     font-size: 20px;
 }
 #nav-profile{
   text-align: center;
-    padding: 20px;
+    padding: 15px;
     line-height: 29px;
     font-size: 20px;
 }
 #ipt{
-  padding: 25px;
-  margin: -10px;
+  padding: 23px;
+  margin-top: -9px;
+}
+
+/* responsive  */
+
+.nv {
+  width: 90%;
+}
+
+.customtab {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.nav-link {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.tab-pane {
+  padding: 10px;
+}
+
+#ipt {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+@media (min-width: 576px) {
+  .col-sm-2 {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 776px) {
+  .col-sm-2 {
+    max-width: 33.3333%;
+  }
+}
+
+@media (min-width: 976px) {
+  .col-sm-2 {
+    max-width: 25%;
+  }
 }

@@ -1,7 +1,6 @@
 import "../Tab/tab.css";
 import React, { useState } from "react";
-// import { Autocomplete, LoadScript } from "@react-google-maps/api";
-// import Geocode from "react-geocode";
+
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState("tab1");
@@ -58,10 +57,9 @@ const Tabs = () => {
               aria-labelledby="nav-home-tab"
               tabindex="0"
             >
-              <h2>Help the trusted person!</h2>
+              <h3>Help the trusted person!</h3>
               <p>
-                Find home help to take care of your depenndent and isolated
-                loved ones.
+                Find home help to take care of your depenndent and isolated.
               </p>
             </div>
             <div
@@ -71,7 +69,7 @@ const Tabs = () => {
               aria-labelledby="nav-profile-tab"
               tabindex="0"
             >
-              <h2>Help depenndent people</h2>
+              <h3>Help depenndent people</h3>
               <p>
                 Find a serious and flexxible personal assistance job in 24
                 hours.
