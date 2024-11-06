@@ -9,7 +9,8 @@ import Family from "./Extraordinary/Family";
 import Footericon from "./Footericon/Footericon";
 import Footertab from "./Footericon/Footertab";
 import Navfooter from "./Footericon/Navfooter";
-import Location from "./Location/Location";
+// import Location from "./Location/Location";
+// import Dashboard from "./Dashbordpage/Dashbord";
 function Home() {
   return (
     <div>
@@ -23,7 +24,8 @@ function Home() {
       <Footericon />
       <Footertab />
       <Navfooter />
-      <Location/>
+      {/* <Location/> */}
+      {/* <Dashboard/> */}
     </div>
   );
 }

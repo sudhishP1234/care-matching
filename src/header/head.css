@@ -34,8 +34,23 @@
 
 
 
-@media (min-width: 468px) {
-  .navbar-nav {
-    margin-left: 280px;
+@media (max-width: 968px) {
+  .navbar-brand{
+    font-weight: 900;
+    font-size: 28px;
+    margin-left: 15px;
+    color: red;
+  }
+}
+@media (max-width: 368px) {
+  .navbar-brand{
+    font-weight: 900;
+    font-size: 28px;
+    margin-left: 15px;
+    color: red;
+  }
+  #navbar {
+   margin-left: 34px;
+   display: block;
   }
 }

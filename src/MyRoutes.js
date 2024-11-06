@@ -9,6 +9,10 @@ import Home from "./Home";
 import Seekarlogin from "./seekersignup/Seekarpostform";
 import Signup1 from "./Ragisterpage/Signup1";
 import HowItWork from "./Navigationpage/Howitwork";
+import Sidenav from "./Dashbordpage/components/Sidenav";
+import Homepage from "./Dashbordpage/Pages/Homepage";
+import About from "./Dashbordpage/Pages/About";
+import Setting from "./Dashbordpage/Pages/Setting";
 
 function MyRoutes() {
   return (
@@ -24,6 +28,16 @@ function MyRoutes() {
           <Route exact path="/Seekarlogin" element={<Seekarlogin />} />
           <Route exact path="/Signup1" element={<Signup1/>} />
           <Route exact path="/Howitwork" element={<HowItWork/>} />
+          <Route exact path="/dashbord" element={<Sidenav/>} />
+          <Route exact path="/Homepage" element={<Homepage/>} />
+          <Route exact path="/About" element={<About/>} />
+          <Route exact path="/setting" element={<Setting/>} />
+
+
+
+          
+         
+
 
 
 

@@ -9,11 +9,19 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function Login() { 
     const [data,setData]=useState({email:"", password:""});
+    const[error,setError]=useState("")
     
     const HandleChange = (e) => {
         const {name,value} = e.target;
         setData({...data,[name]:value}); 
     }
+     const submitPage=(e)=>{
+        e.preventDefault();
+
+        if(!data.email || !data.password){
+            setError("please fill the page")
+           }
+     }
     const collecData= async(e)=> {
         e.preventDefault();
        
@@ -42,10 +50,11 @@ function Login() {
     <Header/>
   
     {/* <div className="container1"> */}
+    {error && <div>{error}</div>}
    
     <div className='responsive-parent' style={{maxWidth:"400px",margin:"125px auto",padding:"20px",boxShadow: "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px"}}>
     <ToastContainer/>
-        <form style={{ width:"100%",padding:"12px",marginBottom:"10px"}}>
+        <form style={{ width:"100%",padding:"12px",marginBottom:"10px"}} onSubmit={{submitPage}}>
             <h3 className='text-center' style={{textAlign:"center",marginBottom:"15px"}} >Login</h3>
             <div className='mb-3'>
                 <label htmlFor='email' style={{padding:"8px"}}> Enter Your Email</label>
@@ -60,8 +69,13 @@ function Login() {
                 <input type='checkbox'className='custome-input-lable'/>
                     Rember me
             </div>
+          
             <div className='d-grid'>
-                <button className='btn btn-dark' onClick={(e)=>collecData(e)}>Log in</button>
+   
+            
+           <button className='btn btn-dark' onClick={(e)=>collecData(e)} >
+            
+             <Link to={`/dashbord`} style={{textDecoration:"none",color:"white",fontSize:"20px"}}> Log in   </Link></button>    
             </div>
             
             <div style={{textAlign:"center",marginTop:"11px"}} >Don't have account

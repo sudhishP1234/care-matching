@@ -1,5 +1,5 @@
 import React from "react";
-
+import '../Footericon/footertab.css'
 function Footertab() {
   return (
     <div className="container">

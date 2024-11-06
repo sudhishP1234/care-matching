@@ -1,5 +1,5 @@
 import React from "react";
-//  import '../App.css';
+ import './Ban.css';
 //  import Location from '../Location/Location';
 
 function Banner() {

@@ -1,64 +1,43 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react'
 
-const DistanceConverter = () => {
-  const [distance, setDistance] = useState('');
-  const [inputUnit, setInputUnit] = useState('miles');
-  const [outputUnit, setOutputUnit] = useState('kilometers');
-  const [convertedDistance, setConvertedDistance] = useState('');
+// function Location() {
+// const bData =[
+//   {
+//     id:0, myname:"petre",age:26
+//   },
+//   {
+//     id:0, myname:"petre",age:26
+//   }
+// ]
+//   const [clr,setClr]=useState(bData)
+//   const [mObj,setObj] =useState("")
 
-  const handleDistanceChange = (event) => {
-    setDistance(event.target.value);
-  };
+//   function clearData(){
+//     setClr([])
+//   }
+//   function changeName(){
+//     setObj("")
+//   }
+//   return (
+//     <>
+    
+//     {
+//       clr.map((currName)=>
+//       <h1 style={{color:"red",fontSize:"1rem", border:"2px solid black", width:"170px", borderRadius:"45%",padding:"8px",backgroundColor:"yellow"}}>
+//       name :{currName.myname} age  :   {currName.age}</h1>)
+//     }
+//     <button onClick={clearData}>clear </button>
+    
+//     <div>
+//       <h1  className='h1style'> {mObj}Name:sam age:21</h1>
+//       <button className='btn' onClick={changeName}>update</button>
+//     </div>
+    
+    
+//     </>
+//   )
+    
+  
+// }
 
-  const handleInputUnitChange = (event) => {
-    setInputUnit(event.target.value);
-  };
-
-  const handleOutputUnitChange = (event) => {
-    setOutputUnit(event.target.value);
-  };
-
-  const convertDistance = () => {
-    if (inputUnit === 'miles' && outputUnit === 'kilometers') {
-      setConvertedDistance(parseFloat(distance) * 1.60934);
-    } else if (inputUnit === 'kilometers' && outputUnit === 'miles') {
-      setConvertedDistance(parseFloat(distance) / 1.60934);
-    }
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    convertDistance();
-  };
-
-  return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Distance:
-        <input type="number" value={distance} onChange={handleDistanceChange} />
-      </label>
-      <label>
-        Input Unit:
-        <select value={inputUnit} onChange={handleInputUnitChange}>
-          <option value="miles">Miles</option>
-          <option value="kilometers">Kilometers</option>
-        </select>
-      </label>
-      <label>
-        Output Unit:
-        <select value={outputUnit} onChange={handleOutputUnitChange}>
-          <option value="miles">Miles</option>
-          <option value="kilometers">Kilometers</option>
-        </select>
-      </label>
-      <button type="submit">Convert</button>
-      {convertedDistance && (
-        <p>
-          Converted Distance: {convertedDistance.toFixed(2)} {outputUnit}
-        </p>
-      )}
-    </form>
-  );
-};
-
-export default DistanceConverter;
+// export default Location

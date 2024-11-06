@@ -7,7 +7,8 @@ function Jobcard () {
   return (
     <>
     <Header/>
-    <div style={{textAlign:"center",marginTop:"90px"}}><p style={{fontSize:"30px"}}>
+    <div style={{textAlign:"center",marginTop:"90px"}}>
+    <p style={{fontSize:"30px"}}>
     Post a job fast and find the care you need</p>
     <h3 style={{fontWeight:"600px"}}>What type of help do you need ?</h3>
     <div className='row' style={{margin:"64px",padding:"48px",display:"flex",flexWrap:"nowrap",justifyContent:"center",gap:"20px",}}>
